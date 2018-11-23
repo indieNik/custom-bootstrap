@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.graph-container {
+    position: relative;
+    top: 12.5vh;
+    margin: auto;
+    height: 200px;
+    width: 90vw;
+    border: 2px solid turquoise;
+    font-size: 0;
+    overflow: scroll;
+}
+
+.graph {
+    height: 200px;
+    width: 100px;
+}
+
+.graph__label {
+    fill: #CBCBCB;
+    text-anchor: middle;
+    font-size: small;
+    &--top {
+        transform: translate(50px, 25px);
+    }
+    &--bottom {
+        transform: translate(50px, 170px);
+    }
+    &--middle {
+        transform: translate(50px, 105px);
+        fill: #3B3B3B;
+    }
+    &--inverted-top {
+        transform: translate(50px, 43px);
+    }
+    &--inverted-bottom {
+        transform: translate(50px, 180px);
+    }
+    &--active {
+        fill: #FF4C00;
+    }
+}
+
+.graph__line {
+    transform: translate(0px, 40px);
+    height: 2px;
+    width: 100px;
+    fill: #CBCBCB;
+    &--inverted {
+    transform: translate(0px, 160px);
+    }
+}
+
+.connector__line {
+    transform: translate(0px, 40px);
+    height: 2px;
+    width: 30px;
+    fill: #CBCBCB;
+    &--inverted {
+        transform: translate(0px, 160px);
+    }
+    &--curve {
+        transform: translate(0px, 0px);
+        d: path("M 0 41 Q 45 50, 40 100 T 80 161");
+        fill: none;
+        stroke: #CBCBCB;
+        stroke-width: 2px;
+        stroke-dasharray: 4px;
+    }
+}
+
+.graph__circle {
+    r: 40px;
+    cx: 50px;
+    cy: 100px;
+    fill: white;
+    stroke: #84CC6F;
+    stroke-width: 15px;
+    &--not-shared {
+        stroke: #D8D8D8;
+    }
+}
+
+.graph__marker {
+    r: 1px;
+    cx: 50px;
+    cy: 41px;
+    fill: white;
+    stroke: #3B3B3B;
+    stroke-width: 8px;
+    &--inverted {
+        cy: 161px;
+        &-active {
+            stroke: #FF4C00;
+            stroke-width: 6px;
+        }
+        &-active-outer {
+            r: 6px;
+            stroke: #FFE2D8;
+            stroke-width: 1px;
+        }
+        &-inactive {
+            stroke: #8EA4B0;
+        }
+    }
+}
