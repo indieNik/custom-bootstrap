@@ -36,18 +36,25 @@
     fill: #FF4C00; }
 
 .graph__line {
-  transform: translate(0px, 40px);
-  height: 2px;
-  width: 100px;
-  fill: #CBCBCB; }
+  fill: none;
+  stroke: #CBCBCB;
+  stroke-width: 2px; }
+  .graph__line--left {
+    d: path("M 0 41 H 50"); }
+  .graph__line--right {
+    d: path("M 50 41 H 100"); }
+  .graph__line--dashed {
+    stroke-dasharray: 4px; }
   .graph__line--inverted {
-    transform: translate(0px, 160px); }
+    transform: translate(0px, 120px); }
 
 .connector__line {
   transform: translate(0px, 40px);
   height: 2px;
   width: 30px;
   fill: #CBCBCB; }
+  .connector__line--dashed {
+    stroke-dasharray: 4px; }
   .connector__line--inverted {
     transform: translate(0px, 160px); }
   .connector__line--curve {
@@ -55,8 +62,7 @@
     d: path("M 0 41 Q 45 50, 40 100 T 80 161");
     fill: none;
     stroke: #CBCBCB;
-    stroke-width: 2px;
-    stroke-dasharray: 4px; }
+    stroke-width: 2px; }
 
 .graph__circle {
   r: 40px;
