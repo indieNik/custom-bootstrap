@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap 4 Theming</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-warning">
+        <a href="index.html" class="navbar-brand">Logo</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="custom-form.html" class="nav-link">Form</a>
+                </li>
+                <li class="nav-item">
+                    <a href="graphs.html" class="nav-link">Graphs</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+    <div class="container">
+        <br>
+        <div class="hero text-center">
+            <h1>
+                Bootstrap 4
+            </h1>
+        </div>
+        <hr> <br>
+        <div>
+            <div class="container">
+                <h1 class="display-3 text-center">
+                    <span class="text-center text-uppercase text-warning">
+                        <span class="font-weight-bold">Custom</span> Theming
+                    </span>
+                </h1>
+                <br>
+                <p class="text-muted text-center">This is a modified bootstrap theme that has custom styles for each component.</p>
+            </div>
+            <br>
+            <div class="card">
+                <img class="card-img-top" src="https://source.unsplash.com/random/500x300" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Card title</h5>
+                    <p class="card-text text-success">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <div class="text-center">
+                        <a href="custom-form.html" class="btn btn-outline-warning btn-warning btn-lg" role="button">
+                                Forms
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var form = document.querySelector('.needs-validation');
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+    </script>
+</body>
+
+</html>
