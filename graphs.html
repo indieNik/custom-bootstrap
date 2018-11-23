@@ -1,79 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SVG Graphs</title>
-    <link rel="stylesheet" href="css/graphs.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>SVG Graphs</title>
+	<link rel="stylesheet" href="css/graphs.css">
 </head>
+
 <body>
-    <!-- Please follow Block__Element--Modifier methodology when tweaking this file-->
-    <div class="graph-container">
-        <svg class="graph">
-            <text class="graph__label graph__label--top">Jan 1</text>
-            <rect class="graph__line"></rect>
-            <circle class="graph__circle"></circle>
-            <text class="graph__label graph__label--middle">500</text>
-            <circle class="graph__marker"></circle>
-            <text class="graph__label graph__label--bottom">Assigned</text>
-        </svg>
-        <svg class="connector" height="200" width="30">
-            <rect class="connector__line"></rect>
-        </svg>
-        <svg class="graph">
-            <text class="graph__label graph__label--top">Jan 10</text>
-            <rect class="graph__line"></rect>
-            <circle class="graph__circle"></circle>
-            <circle class="graph__marker"></circle>
-            <text class="graph__label graph__label--bottom">Shared</text>
-        </svg>
-        <svg class="connector" height="200" width="30">
-            <rect class="connector__line"></rect>
-        </svg>
-        <svg class="graph">
-            <text class="graph__label graph__label--top">Jan 18</text>
-            <rect class="graph__line"></rect>
-            <circle class="graph__circle"></circle>
-            <circle class="graph__marker"></circle>
-            <text class="graph__label graph__label--bottom">LP</text>
-        </svg>
-        <!--   Alternate Curved SVG
+	<!-- Please follow Block__Element--Modifier methodology when tweaking this file-->
+	<div class="graph-container">
+		<svg class="graph">
+			<text class="graph__label graph__label--top">Jan 1</text>
+      <path class="graph__line" />
+			<circle class="graph__circle"></circle>
+			<text class="graph__label graph__label--middle">500</text>
+			<circle class="graph__marker"></circle>
+			<text class="graph__label graph__label--bottom">Assigned</text>
+		</svg>
+		<svg class="connector" height="200" width="30">
+			<rect class="connector__line"></rect>
+		</svg>
+		<svg class="graph">
+			<text class="graph__label graph__label--top">Jan 10</text>
+			<path class="graph__line" />
+			<circle class="graph__circle"></circle>
+			<circle class="graph__marker"></circle>
+			<text class="graph__label graph__label--bottom">Shared</text>
+		</svg>
+		<svg class="connector" height="200" width="30">
+			<rect class="connector__line"></rect>
+		</svg>
+		<svg class="graph">
+			<text class="graph__label graph__label--top">Jan 18</text>
+			<path class="graph__line graph__line--dashed" />
+			<circle class="graph__circle"></circle>
+			<circle class="graph__marker"></circle>
+			<text class="graph__label graph__label--bottom">LP</text>
+		</svg>
+		<!--   Alternate Curved SVG
         <svg class="graph__connector--top-inverted" height="200" width="100">
             <path d="M 0 41 Q 45 40, 50 100 T 100 161" fill="none" stroke="#CBCBCB" stroke-width="2"/>
         </svg> -->
-        <svg class="connector" height="200" width="80">
-            <path class="connector__line connector__line--curve"/>
-        </svg>
-        
-        <svg class="graph">
-            <text class="graph__label graph__label--inverted-top">Employee</text>
-            <circle class="graph__circle"></circle>
-            <rect class="graph__line graph__line--inverted"></rect>
-            <circle class="graph__marker graph__marker--inverted graph__marker--inverted"></circle>
-            <text class="graph__label graph__label--inverted-bottom" x="50" y="180">Feb 2</text>
-        </svg>
-        <svg class="connector" height="200" width="30">
-            <rect class="connector__line connector__line--inverted"></rect>
-        </svg>
-        <svg class="graph">
-            <text class="graph__label graph__label--inverted-top">Manager</text>
-            <circle class="graph__circle"></circle>
-            <rect class="graph__line graph__line--inverted"></rect>
-            <circle class="graph__marker graph__marker--inverted graph__marker--inverted-active-outer"></circle>
-            <circle class="graph__marker graph__marker--inverted graph__marker--inverted-active"></circle>
-            <text class="graph__label graph__label--inverted-bottom graph__label--active">Feb 23</text>
-        </svg>
-        <svg class="connector" height="200" width="30">
-            <rect class="connector__line connector__line--inverted"></rect>
-        </svg>
-        <svg class="graph">
-            <text class="graph__label graph__label--inverted-top">Additional</text>
-            <circle class="graph__circle graph__circle--not-shared"></circle>
-            <rect class="graph__line graph__line--inverted"></rect>
-            <circle class="graph__marker graph__marker--inverted graph__marker--inverted-inactive"></circle>
-            <text class="graph__label graph__label--inverted-bottom">Mar 1</text>
-        </svg>
-    </div>
+		<svg class="connector" height="200" width="80">
+			<path class="connector__line connector__line--curve connector__line--dashed" />
+		</svg>
+
+		<svg class="graph">
+			<text class="graph__label graph__label--inverted-top">Employee</text>
+			<circle class="graph__circle"></circle>
+			<path class="graph__line graph__line--dashed graph__line--inverted" />
+			<circle class="graph__marker graph__marker--inverted graph__marker--inverted"></circle>
+			<text class="graph__label graph__label--inverted-bottom" x="50" y="180">Feb 2</text>
+		</svg>
+		<svg class="connector" height="200" width="30">
+			<rect class="connector__line connector__line--inverted"></rect>
+		</svg>
+		<svg class="graph">
+			<text class="graph__label graph__label--inverted-top">Manager</text>
+			<circle class="graph__circle"></circle>
+			<path class="graph__line graph__line--inverted" />
+			<circle class="graph__marker graph__marker--inverted graph__marker--inverted-active-outer"></circle>
+			<circle class="graph__marker graph__marker--inverted graph__marker--inverted-active"></circle>
+			<text class="graph__label graph__label--inverted-bottom graph__label--active">Feb 23</text>
+		</svg>
+		<svg class="connector" height="200" width="30">
+			<rect class="connector__line connector__line--inverted"></rect>
+		</svg>
+		<svg class="graph">
+			<text class="graph__label graph__label--inverted-top">Additional</text>
+			<circle class="graph__circle graph__circle--not-shared"></circle>
+			<path class="graph__line graph__line--inverted" />
+			<circle class="graph__marker graph__marker--inverted graph__marker--inverted-inactive"></circle>
+			<text class="graph__label graph__label--inverted-bottom">Mar 1</text>
+		</svg>
+	</div>
 </body>
+
 </html>
