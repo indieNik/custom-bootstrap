@@ -46,10 +46,15 @@
 }
 
 .graph__line {
-  d: path("M 0 41 H 100");
 	fill: none;
   stroke: #CBCBCB;
   stroke-width: 2px;
+  &--left {
+  d: path("M 0 41 H 50");    
+  }
+  &--right {
+  d: path("M 50 41 H 100");    
+  }
   &--dashed {
     stroke-dasharray: 4px;
   }
