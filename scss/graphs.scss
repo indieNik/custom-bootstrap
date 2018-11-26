@@ -104,17 +104,17 @@
 	stroke-width: 8px;
 	&--inverted {
 			cy: 161px;
-			&-active {
-					stroke: #FF4C00;
-					stroke-width: 6px;
-			}
-			&-active-outer {
-					r: 6px;
-					stroke: #FFE2D8;
-					stroke-width: 1px;
-			}
-			&-inactive {
-					stroke: #8EA4B0;
-			}
+	}
+	&--active {
+		stroke: #FF4C00;
+		stroke-width: 6px;
+	}
+	&--active-outer {
+		r: 6px;
+		stroke: #FFE2D8;
+		stroke-width: 2px;
+	}
+	&--inactive {
+		stroke: #8EA4B0;
 	}
 }

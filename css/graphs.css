@@ -83,14 +83,14 @@
   stroke-width: 8px; }
   .graph__marker--inverted {
     cy: 161px; }
-    .graph__marker--inverted-active {
-      stroke: #FF4C00;
-      stroke-width: 6px; }
-    .graph__marker--inverted-active-outer {
-      r: 6px;
-      stroke: #FFE2D8;
-      stroke-width: 1px; }
-    .graph__marker--inverted-inactive {
-      stroke: #8EA4B0; }
+  .graph__marker--active {
+    stroke: #FF4C00;
+    stroke-width: 6px; }
+  .graph__marker--active-outer {
+    r: 6px;
+    stroke: #FFE2D8;
+    stroke-width: 2px; }
+  .graph__marker--inactive {
+    stroke: #8EA4B0; }
 
 /*# sourceMappingURL=graphs.css.map */
