@@ -51,6 +51,8 @@
 .connector {
   height: 200px;
   width: 30px; }
+  .connector--curve {
+    width: 80px; }
 
 .connector__line {
   height: 200px;

@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>SVG Graphs</title>
-	<link rel="stylesheet" href="css/graphs.css">
-	<script src="js/draw_graph.js"></script>
+	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>SVG Graphs</title>
+		<link rel="stylesheet" href="css/graphs.css">
+		<script src="js/draw_graph.js"></script>
 </head>
 
 <body>
@@ -44,14 +44,14 @@
 			<circle class="graph__marker"></circle>
 			<text class="graph__label graph__label--bottom">LP</text>
 		</svg>
-		  <!-- Alternate Curved SVG -->
-        <!-- <svg class="graph__connector--top-inverted" height="200" width="100">
-            <path d="M 0 41 Q 45 40, 50 100 T 100 161" fill="none" stroke="#CBCBCB" stroke-width="2"/>
-        </svg> -->
-		<svg class="connector" height="200" width="80">
+		<!-- Alternate Curved SVG -->
+		<!-- <svg class="graph__connector--top-inverted" height="200" width="100">
+			<path d="M 0 41 Q 45 40, 50 100 T 100 161" fill="none" stroke="#CBCBCB" stroke-width="2"/>
+		</svg> -->
+		<svg class="connector connector--curve">
 			<path class="connector__line connector__line--curve connector__line--dashed" />
 		</svg>
-
+		
 		<svg class="graph">
 			<text class="graph__label graph__label--inverted-top">Employee</text>
 			<circle class="graph__circle"></circle>
@@ -84,9 +84,7 @@
 			<text class="graph__label graph__label--inverted-bottom">Mar 1</text>
 		</svg>
 	</div>
-
-	<div id="graph-container" class="graph-container">
-	</div>
+	
 </body>
 
 </html>
