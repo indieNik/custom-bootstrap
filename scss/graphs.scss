@@ -63,24 +63,31 @@
 	}
 }
 
-.connector__line {
-	transform: translate(0px, 40px);
-	height: 2px;
+.connector {
+	height: 200px;
 	width: 30px;
-	fill: #CBCBCB;
-  &--dashed {
-    stroke-dasharray: 4px;
-  }
-  &--inverted {
-    transform: translate(0px, 160px);
-  }
-  &--curve {
-    transform: translate(0px, 0px);
-    d: path("M 0 41 Q 45 50, 40 100 T 80 161");
-    fill: none;
-    stroke: #CBCBCB;
-    stroke-width: 2px;
-  }
+}
+
+.connector__line {
+	height: 200px;
+	width: 30px;
+	fill: none;
+	stroke: #CBCBCB;
+	stroke-width: 2px;
+	d: path("M 0 41 H 50"); 
+	&--dashed {
+		stroke-dasharray: 4px;
+	}
+	&--inverted {
+		transform: translate(0px, 120px);
+	}
+	&--curve {
+		transform: translate(0px, 0px);
+		d: path("M 0 41 Q 45 50, 40 100 T 80 161");
+		fill: none;
+		stroke: #CBCBCB;
+		stroke-width: 2px;
+	}
 }
 
 .graph__circle {

@@ -48,15 +48,21 @@
   .graph__line--inverted {
     transform: translate(0px, 120px); }
 
+.connector {
+  height: 200px;
+  width: 30px; }
+
 .connector__line {
-  transform: translate(0px, 40px);
-  height: 2px;
+  height: 200px;
   width: 30px;
-  fill: #CBCBCB; }
+  fill: none;
+  stroke: #CBCBCB;
+  stroke-width: 2px;
+  d: path("M 0 41 H 50"); }
   .connector__line--dashed {
     stroke-dasharray: 4px; }
   .connector__line--inverted {
-    transform: translate(0px, 160px); }
+    transform: translate(0px, 120px); }
   .connector__line--curve {
     transform: translate(0px, 0px);
     d: path("M 0 41 Q 45 50, 40 100 T 80 161");
